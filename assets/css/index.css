@@ -1,0 +1,17 @@
+.toppage {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.blockgoogle {
+  border: 1px solid gray;
+  height: 30px;
+  width: 160px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.blockgoogle img {
+  height: 80%;
+  width: 30%;
+}
