@@ -64,7 +64,7 @@ if (isset($_POST['envoie'])) {
         <!-- Barre retour et tri -->
         <div class="flex" style="justify-content: space-between;">
             <a href=".//index.html" class="btn"><i class="fas fa-chevron-left"></i> Retour</a>
-            <a href=".//ajoutproduit.html" class="btn">Ajouter une tâches</a>
+            <a href="./addpersonnel.php" class="btn">Ajouter une tâches</a>
             <a class="btn">Trier <i class="fas fa-chevron-down"></i></a>
         </div>
 
@@ -84,7 +84,7 @@ if (isset($_POST['envoie'])) {
                     <?= "<td>" . $p["id"] . "</td>" ?>
                     <?= "<td>" . $p["taches"] . "</td>" ?>
                     <td>
-                        <a href="" class="btn">Supprimer</a>
+                        <?= "<a href='./deletepersonnel.php?id=" . $p["id"] . "' class='btn'>Supprimer</a>" ?>
                     </td>
                 </tr>
             <?php } ?>

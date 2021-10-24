@@ -59,7 +59,7 @@ if ($req->execute()) {
                         <?= "<td>" . $t["id"] . "</td>" ?>
                         <?= "<td>" . $t["taches"] . "</td>" ?>
                         <td>
-                            <a href="../soutenancefinalesolo/deleteaujourdhui.php" class="btn">Supprimer</a>
+                            <?= "<a href='./deleteaujourdhui.php?id=" . $t["id"] . "' class='btn'>Supprimer</a>" ?>
                         </td>
                     </tr>
                 <?php } ?>

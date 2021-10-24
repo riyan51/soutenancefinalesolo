@@ -43,8 +43,7 @@ if ($req->execute()) {
             <a style="text-decoration: none;" href="../../../soutenancefinalesolo/voyage.php">Voyages</a>
         </li>
         <li>
-            <img src="" style="margin-top: 280px;" />
-            <a style="text-decoration: none;" href="../../../soutenancefinalesolo/deconnexion.php">Déconnexion</a>
+            <a style="text-decoration: none; margin-left: 12px" href="../../../soutenancefinalesolo/deconnexion.php">Déconnexion</a>
         </li>
     </ul>
 

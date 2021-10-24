@@ -49,7 +49,7 @@ if ($req->execute()) {
         <!-- Barre retour et tri -->
         <div class="flex" style="justify-content: space-between;">
             <a href=".//index.html" class="btn"><i class="fas fa-chevron-left"></i> Retour</a>
-            <a href=".//ajoutproduit.html" class="btn">Ajouter une tâche</a>
+            <a href="./addindexadmin.php" class="btn">Ajouter une tâche</a>
             <a class="btn">Trier <i class="fas fa-chevron-down"></i></a>
         </div>
 
@@ -69,7 +69,7 @@ if ($req->execute()) {
                     <?= "<td>" . $t["id"] . "</td>" ?>
                     <?= "<td>" . $t["taches"] . "</td>" ?>
                     <td>
-                        <a href="" class="btn">Supprimer</a>
+                        <?= "<a href='./deleteindexadmin.php?id=" . $t["id"] . "' class='btn'>Supprimer</a>" ?>
                     </td>
                 </tr>
             <?php } ?>

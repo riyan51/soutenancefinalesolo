@@ -10,10 +10,10 @@ include("./config.php");
 if (isset($_POST['envoi'])) {
     if (!empty($_POST['taches'])) {
         $taches = ($_POST['taches']);
-        $insertUser = $bdd->prepare('INSERT INTO aujourdhui(taches)VALUES (?)');
+        $insertUser = $bdd->prepare('INSERT INTO voyage(taches)VALUES (?)');
         $insertUser->execute(array($taches));
 
-        $recupUser = $bdd->prepare('SELECT * FROM aujourdhui WHERE taches = ?');
+        $recupUser = $bdd->prepare('SELECT * FROM voyage WHERE taches = ?');
         $recupUser->execute(array(['taches']));
         if ($recupUser->rowCount() > 0) {
             $_SESSION['taches'] = $taches;
